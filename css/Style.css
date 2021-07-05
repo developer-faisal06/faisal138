@@ -1,0 +1,146 @@
+
+/* global style */
+/* custom css varibale  */
+:root{
+    --skin-color:#FF4B93;
+    --white-coor:#ffffff;
+    --text-color:#FA6D59;
+    --blue-color:blue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'Raleway', sans-serif;
+}
+p{
+    font-family: cursive;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+    padding: 25px 0px;
+}
+.container span{
+   color: var(--text-color);
+}
+.half-width p {
+    margin-bottom: 30px;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.half-width{
+    width: 50%;
+}
+.width-45{
+    width: 45%;
+}
+.small-btn{
+    padding: 10px;
+}
+.container a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    color: var(--white-coor);
+    background-image: linear-gradient(rgb(0, 0, 123),#7A34D8);
+}
+.container a:hover{
+    background-image: linear-gradient(var(--text-color), rgb(0, 0, 123)) ;
+}
+.image{
+    width: 80%;
+}
+   
+img{
+    width: 100%;
+}
+
+/* Heafer section */
+.header{
+    background-color: rgb(243, 216, 181);
+    padding: 25px 0px;
+    margin: auto;
+    text-align: center;
+    color:var(--skin-color);
+    text-transform: uppercase;
+}
+.header{
+    background-image: url(../img/top-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+/* hero section */
+#hero h1 {
+    font-size: 70px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/* dream section */
+#bg-dream{
+    background-image: url(../img/my-dream-bg.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+#bg-dream h1{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+
+/* experiance section  */
+.ex-header {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.ex-half{
+    padding: 25px;
+    box-shadow: inset 0px 0px 40px -13px var(--skin-color);
+   border-left: 10px solid ;
+   border-image: linear-gradient(180deg, var(--blue-color), var(--skin-color));
+   border-image-slice: 1;
+   border-radius: 5px;
+}
+#ex-bg-img{
+    background-image: url(../img/ex-bg.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.ex-half:last-child{
+    border-image:linear-gradient(180deg, var(--text-color), var(--skin-color));
+    border-left: 10px solid ;
+    border-image-slice: 1;
+    border-radius: 5px;
+}
+
+/*  foter section  */
+footer{
+    text-align: center;
+}
+
+
+/* my-cv page   */
+.cv{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    font-size: 50px;
+    color: var(--skin-color);
+
+}
