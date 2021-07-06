@@ -19,6 +19,9 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: cursive;
 }
+.mb-2{
+    margin-bottom: 20px;
+}
 .container{
     width: 90%;
     margin: 50px auto;
@@ -36,6 +39,12 @@ p{
     justify-content: space-between;
     align-content: center;
     align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
 }
 .half-width{
     width: 50%;
@@ -143,4 +152,60 @@ footer{
     font-size: 50px;
     color: var(--skin-color);
 
+}
+
+/* Contact infformation */
+
+#contact-bg-img{
+    background-image: url(../img/my-dream-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#contact-bg-img .ex-header {
+text-align: right;
+}
+
+.contact-box{
+    border-image:linear-gradient(180deg, var(--text-color), var(--skin-color));
+    border-right: 10px solid  ;
+    border-image-slice:4;
+    border-radius: 5px;
+}
+.contact-box:last-child{
+    border-image:linear-gradient(180deg, var(--blue-color), var(--skin-color));
+    border-right: 10px solid  ;
+    border-image-slice:4;
+    border-radius: 5px;
+}
+
+.contact-section .image img{
+    width: 100%;
+}
+form{
+    background-color: #ffff;
+}
+input:focus{
+   outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+
+.intut-field , textarea{ 
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid var(--skin-color);
+    border-radius: 10px;
+ }
+textarea {
+    border: none;
+    border-bottom: 2px solid var(--skin-color);
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+        
 }
